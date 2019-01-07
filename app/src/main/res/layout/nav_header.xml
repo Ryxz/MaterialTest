@@ -10,22 +10,19 @@
         android:id="@+id/icon_image"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/nav_icon"
         android:layout_centerInParent="true"/>
     <TextView
-        android:id="@+id/username"
+        android:id="@+id/user_name_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/mail"
-        android:text="江小白"
+        android:layout_above="@+id/mail_text"
         android:textSize="14sp"
         android:textColor="#fff"/>
     <TextView
-        android:id="@+id/mail"
+        android:id="@+id/mail_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="renyuxiangzz@163.com"
         android:textSize="14sp"
         android:textColor="#fff"/>
 

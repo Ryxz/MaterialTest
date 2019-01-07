@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context=".activity.MineActivity">
+
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways|snap"/>-->
+    <RelativeLayout
+        android:id="@+id/mine_toobal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/mine_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="个人中心" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/bg_info_rl">
+        <TextView
+            android:id="@+id/start_text"
+            android:layout_width="wrap_content"
+            android:text="头像"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_head_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            app:civ_border_color="#F3F3F3"
+            app:civ_border_width="1dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_info_rl">>
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:text="昵称"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/user_nick_name_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/name_img_back"/>
+
+        <ImageView
+            android:id="@+id/name_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_chevron_right_black_24dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/user_gender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_info_rl">>
+        <TextView
+            android:id="@+id/sex_text"
+            android:layout_width="wrap_content"
+            android:text="性别"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/user_gender_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/sex_img_back"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/sex_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

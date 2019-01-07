@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical"
+    tools:context=".activity.MineActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/mine_toobal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/mail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="邮箱" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/bg_info_rl">>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="邮箱"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/user_mail_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/mail_img_back"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/mail_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

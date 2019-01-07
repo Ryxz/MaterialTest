@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/do_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:background="@drawable/cornner_dialog"
+            android:textColor="#000"
+            android:text="拍照"/>
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:background="#d5d5d5"/>-->
+        <Button
+            android:id="@+id/select_img_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/cornner_dialog"
+            android:text="从相册中选择"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/cancle_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/cornner_dialog"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
